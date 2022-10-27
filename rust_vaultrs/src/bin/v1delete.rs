@@ -9,9 +9,11 @@ async fn main() {
 
     // Instead of cmdl args:
     let mount = "kv-v1";
-    let path = "my/secrets";
+    let path = "dev/config/mongodb";
 
-    kv1::delete(&client, &mount, &path).await.expect("DELETE failed");
+    kv1::delete(&client, &mount, &path)
+        .await
+        .expect("DELETE failed");
 
     println!("Deleted {}", path);
 }

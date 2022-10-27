@@ -10,7 +10,9 @@ async fn main() {
     // Instead of cmdl args:
     let mount = "kv-v1";
 
-    let secrets = kv1::list(&client, &mount, "my").await.expect("list failed");
+    let secrets = kv1::list(&client, &mount, "dev/config")
+        .await
+        .expect("list failed");
 
     println!("secrets {:?}", secrets);
     println!("secrets.data {:?}", secrets.data);

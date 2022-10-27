@@ -11,10 +11,12 @@ async fn main() {
 
     // Instead of cmdl args:
     let mount = "kv-v1";
-    let path = "my/secrets";
+    let path = "dev/config/mongodb";
     let my_secrets = HashMap::from([
-        ("key1", "value1"),
-        ("key2", "value2"),
+        ("url", "foo.example.com:35533"),
+        ("db_name", "users"),
+        ("user", "lausberg"),
+        ("password", "3lemente6er1iterarischen4hetorik"),
     ]);
 
     kv1::set(&client, &mount, &path, &my_secrets)

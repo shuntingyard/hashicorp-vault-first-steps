@@ -22,7 +22,9 @@ curl/first_start_vault_kv_post_googleapi.sh
 ...
 ./first_start_killvault.sh
 ```
-Skipped "multiple values" (mongodb) exercise.
+Rust implementation of "multiple values" (mongodb) exercise in `rust_vaultrs`.
+
+- [ ] Does the API allow to list keys present in a KV v1 vault?
 
 ### First Steps
 Tutorial used: [Versioned Key/Value Secrets Engine](https://learn.hashicorp.com/tutorials/vault/versioned-kv?in=vault/secrets-management)
