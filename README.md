@@ -1,10 +1,10 @@
-# ...
+# hashicorp-vault-first-steps
 
-## My First Steps
+## Exploring KV engines in Hashicorp Vault
 ### Installation
 trivial
 
-### First Steps
+### KV v1
 Tutorial used: [Static Secrets: Key/Value Secrets Engine](https://learn.hashicorp.com/tutorials/vault/static-secrets)
 (important note: this is about KV engine version 1 which doesn't keep versions
 of values entered).
@@ -26,17 +26,16 @@ Rust implementation of "multiple values" (mongodb) exercise in `rust_vaultrs`.
 
 - [ ] Does the API allow to list keys present in a KV v1 vault?
 
-### First Steps
+### KV v2
 Tutorial used: [Versioned Key/Value Secrets Engine](https://learn.hashicorp.com/tutorials/vault/versioned-kv?in=vault/secrets-management)
 
 The first and most important reason for a store with versioning is the ability
 to recover from unintentional data loss or overwrite.
 
 ## Resources
-### Vault Manuals and Intros Used
-
-
 ### Programming
 [Python hvac API Usage](https://hvac.readthedocs.io/en/stable/usage/)
+
+[Crate vaultrs (Github)](https://github.com/jmgilman/vaultrs)
 
 [Crate hashicorp_vault (Github)](https://github.com/ChrisMacNaughton/vault-rs)
